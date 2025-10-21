@@ -1,0 +1,16 @@
+# Local environement specific
+.azure/
+.vscode/
+
+# Python specific dirs
+/__pycache__
+__pycache__/
+
+# Environments
+.env
+.venv
+env/
+my_env/
+ENV/
+env.bak/
+venv.bak/
