@@ -3,6 +3,7 @@
 
 from fastapi import FastAPI
 from pydantic import BaseModel
+import uvicorn
 
 app = FastAPI()
 
@@ -19,7 +20,6 @@ class Book(BaseModel):
 
 @app.get("/")
 def index():
-    print("First command in the same line!"); print("Second command in the same line!")
     return { "message": "Hello World! Hello Fast API" }
 
 @app.get("/books")
@@ -50,3 +50,6 @@ def create_book(book: Book):
 
     books.append(new_book)
     return new_book
+
+if __name__ == '__main__':
+    uvicorn.run('main:app', host='0.0.0.0', port=8000)

@@ -12,6 +12,19 @@ The following two sections will give you the commands to run the application in 
 python -m venv my_env
 ```
 
+### Activate Virtual Environment 
+
+- Linux
+
+```
+source my_env/bin/activate
+```
+
+- Windows (Powershell)
+```
+.\my_env\Scripts\Activate.ps1
+```
+
 #### Install Requirements
 ```
 pip install -r requirements.txt
@@ -19,7 +32,7 @@ pip install -r requirements.txt
 
 #### Run Fast
 ```
-fastapi run api_app.py
+fastapi run app.py
 ```
 
 ### Local Setup - Docker
